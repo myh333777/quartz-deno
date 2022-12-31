@@ -14,7 +14,7 @@ enableGitHubEdit: true
 enableMermaid: true
 GitHubLink: https://github.com/myh333777
 search:
-  enableSemanticSearch: true
+  enableSemanticSearch: false
   operandApiKey: "bya8taklf8f7"
   operandIndexId: "w9abnfnxro7ntei3syzld60237e7frlc7eur"
 description:
