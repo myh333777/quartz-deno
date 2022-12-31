@@ -1,22 +1,17 @@
-name: Create and publish a Docker image
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ['hugo']
- # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - hugo
 
 jobs:
   deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    permissions:
-      id-token: write # Allows authentication with Deno Deploy.
-      contents: read # Allows cloning the repo.
-
+    runs-on: ubuntu-20.04
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.18
@@ -35,11 +30,10 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      # TODO: add a build step here
-
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          project: "mdg"
-          entrypoint: https://deno.land/std/http/file_server.ts
-          root: public # Where the built HTML/CSS/JS files are located.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master  # deploying branch
+          cname: quartz.jzhao.xyz
