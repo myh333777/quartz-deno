@@ -14,9 +14,9 @@ enableGitHubEdit: true
 enableMermaid: true
 GitHubLink: https://github.com/myh333777
 search:
-  enableSemanticSearch: false
-  operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
-  operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
+  enableSemanticSearch: true
+  operandApiKey: "bya8taklf8f7"
+  operandIndexId: "w9abnfnxro7ntei3syzld60237e7frlc7eur"
 description:
   Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
   Wikilink support, backlinks, local graph, tags, and link previews.
