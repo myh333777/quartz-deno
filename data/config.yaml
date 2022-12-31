@@ -9,7 +9,7 @@ enableCallouts: true
 enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
-enableRecentNotes: false
+enableRecentNotes: true
 enableGitHubEdit: true
 enableMermaid: true
 GitHubLink: https://github.com/myh333777
@@ -24,4 +24,4 @@ page_title:
   "🪴 M-Garden"
 links:
   - link_name: GitHub
-    link: https://github.com/jackyzha0
+    link: https://github.com/myh333777
