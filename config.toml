@@ -1,4 +1,4 @@
-baseURL = "https://mgarden.deno.dev/"
+baseURL = "https://mdg.deno.dev/"
 defaultContentLanguage = "zh-cn" # theme lang
 languageCode = "zh-CN"
 googleAnalytics = "G-XYFD95KB4J"
