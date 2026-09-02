@@ -16,3 +16,7 @@
 ## Temporary artifact transfer
 
 [Jiangsu social-science awards archive](https://myh.190904.xyz/temp-jiangsu-awards-20260902-1788329852/)
+
+- [Direct ZIP via GitHub Pages](https://myh333777.github.io/temp-jiangsu-awards-20260902-1788329852/jiangsu_awards_archive.zip)
+- [Direct ZIP via GitHub Raw](https://raw.githubusercontent.com/myh333777/temp-jiangsu-awards-20260902-1788329852/main/jiangsu_awards_archive.zip)
+- [Direct ZIP via GitHub Release](https://github.com/myh333777/temp-jiangsu-awards-20260902-1788329852/releases/download/v1/jiangsu_awards_archive.zip)
